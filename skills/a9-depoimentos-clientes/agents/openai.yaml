@@ -1,7 +1,7 @@
 interface:
   display_name: "A9 · Depoimentos de clientes"
-  short_description: "Depoimentos em Docs na pasta de cada cliente"
+  short_description: "Do vídeo ao Docs de depoimentos para toda a A9"
   brand_color: "#6DFF30"
-  default_prompt: "Use $a9-depoimentos-clientes ao atualizar o Mapa desta reunião e salve um Google Docs de depoimentos na pasta da transcrição do cliente, sem gerar imagens."
+  default_prompt: "Use $a9-depoimentos-clientes para identificar os depoimentos neste vídeo e salvar um Google Docs na pasta autorizada do Drive com data, pessoa, frase literal e minutagem."
 policy:
   allow_implicit_invocation: true

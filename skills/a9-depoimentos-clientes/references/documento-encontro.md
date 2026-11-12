@@ -1,6 +1,6 @@
 # Documento de depoimentos do encontro
 
-Crie um Google Docs nativo por reunião na mesma pasta da transcrição, dentro do cliente. Não use a pasta geral de criações nem o documento central antigo como destino padrão. Preserve a organização e as permissões existentes do Drive. Não crie pastas adicionais automaticamente.
+Crie um Google Docs nativo por reunião na pasta autorizada do Drive. A pessoa pode indicar a pasta no próprio pedido, inclusive quando enviar somente um vídeo local ou anexado. Se houver transcrição no Drive e essa for a organização autorizada do cliente, use a mesma pasta. Consulte contexto ou configuração individual somente quando necessário para localizar o destino. Sem destino confirmado, peça a pasta que falta antes de salvar. Preserve organização e permissões existentes, sem criar pastas adicionais automaticamente.
 
 ## Título e identidade
 
@@ -10,7 +10,7 @@ Antes de criar, consulte os Docs existentes nessa pasta e compare também a tran
 
 ## Conteúdo
 
-Abra com cliente, programa, nome do encontro e data. Inclua links da transcrição e gravação efetivamente localizados. Para cada depoimento, registre os campos abaixo em texto ou tabela nativa simples.
+Abra com cliente, nome do encontro e data. Produto, serviço ou programa é um campo opcional, preenchido somente se confirmado. Não vincule a reunião a Propulsor, Domínio ou IA por padrão. Inclua links da transcrição e gravação efetivamente localizados. Para vídeo anexado ou local, identifique o arquivo e o método de análise usado, sem inventar link do Drive. Para cada depoimento, registre os campos abaixo em texto ou tabela nativa simples.
 
 | Campo | Valor |
 | --- | --- |
@@ -25,18 +25,18 @@ O horário do momento do vídeo é o tempo decorrido da gravação. Não o troqu
 
 Depoimentos · Empresa Horizonte · 2026-11-12
 
-Propulsor de IA · Reunião de acompanhamento · 12/11/2026
+Reunião de relacionamento com cliente · 12/11/2026
 
-Fontes recebidas como transcrição. Links de transcrição e vídeo não informados.
+Fonte recebida como vídeo anexado. Exemplo de resultado após análise autorizada do vídeo. Link do Drive não informado.
 
 | Pessoa | Momento do vídeo | Frase literal | Contexto |
 | --- | --- | --- | --- |
-| Ana | 00:05:10 → 00:05:48 | Agora faço o relatório em 20 minutos, antes levava duas horas. | Resultado relatado pela cliente, sem medição independente |
+| Ana | 00:05:10 → 00:05:48 | Depois do treinamento, conseguimos organizar os pedidos sem aquela troca de planilhas. | Resultado relatado pela cliente, sem medição independente |
 
 Este exemplo não representa cliente real. Se não houver fala aproveitável, o Docs informa que nenhum depoimento foi identificado nas fontes analisadas, sem inventar um testemunho positivo. Se só houver resumo, sinalize que não foi possível extrair frase literal ou minutagem.
 
 ## Conferência
 
-Leia o conteúdo salvo e confirme o parent real do arquivo na pasta da transcrição. Após erro de criação, busque o documento por identidade da reunião antes de tentar novamente. Ao complementar, preserve trechos anteriores e histórico de correção. Entregue somente o link retornado pelo serviço e verificado.
+Leia o conteúdo salvo e confirme o parent real na pasta autorizada. Após erro de criação, busque o documento por identidade da reunião antes de tentar novamente. Ao complementar, preserve trechos anteriores e histórico de correção. Entregue somente o link retornado pelo serviço e verificado.
 
 Este documento é o entregável do fluxo. Não gere imagem, capa, story, card ou pasta de imagens como parte dessa rotina.

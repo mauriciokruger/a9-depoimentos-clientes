@@ -36,7 +36,7 @@ $logoHeight = [single](230 * $logo.Height / $logo.Width)
 $graphics.DrawImage($logo, [single]78, [single]54, [single]230, $logoHeight)
 $logo.Dispose()
 
-Draw-Text 'PROPULSOR E DOMÍNIO DE IA' 20 '#29FFE8' 80 170 $true
+Draw-Text 'REUNIÕES COM CLIENTES DA A9' 20 '#29FFE8' 80 170 $true
 Draw-Text 'Cada reunião deixa' 68 '#FFFFFF' 74 226 $true
 Draw-Text 'uma evidência.' 82 '#6DFF30' 72 305 $true
 Draw-Text 'Falas reais, resultados e evolução.' 27 '#D2D7E1' 80 438
@@ -52,7 +52,7 @@ Draw-Text '03' 19 '#29FFE8' 1180 467 $true
 Draw-Text 'Google Docs' 28 '#FFFFFF' 1180 494 $true
 
 Draw-Text 'Do conhecimento ao resultado.' 23 '#FFFFFF' 80 612
-Draw-Text 'SKILL A9 · v1.1.0' 18 '#AAB4CB' 1180 618
+Draw-Text 'SKILL A9 · v1.2.0' 18 '#AAB4CB' 1180 618
 $bar = [Drawing.Drawing2D.LinearGradientBrush]::new([Drawing.Rectangle]::new(80, 676, 1440, 5), [Drawing.ColorTranslator]::FromHtml('#6DFF30'), [Drawing.ColorTranslator]::FromHtml('#29FFE8'), 0.0)
 $graphics.FillRectangle($bar, 80, 676, 1440, 5)
 $bitmap.Save((Join-Path $assetDir 'capa.png'), [Drawing.Imaging.ImageFormat]::Png)

@@ -1,5 +1,15 @@
 # Validação
 
+## Versão 1.2.0
+
+Documentação ampliada em 12/11/2026 para qualquer integrante da A9 e reuniões com clientes de qualquer serviço. Propulsor e Domínio passam a ser aplicações específicas. O fluxo aceita vídeo local ou anexado sem transcrição pronta, pasta autorizada fornecida no pedido e uso sem arquivo de configuração. Produto ou programa é opcional.
+
+A leitura de referência da versão 1.1.0 encontrou três lacunas no cenário de uma pessoa do comercial com vídeo local de reunião sem relação com IA. O acionamento ainda mencionava somente consultorias, não explicitava o vídeo sem transcrição e exigia configuração sem esclarecer a prioridade da pasta informada. A versão 1.2.0 documenta essas rotas e mantém o Docs por reunião, as falas literais, timestamps, deduplicação e conferência do destino.
+
+A aplicação simulada da versão 1.2.0 resolveu o caso sem exigir programa, Mapa, ata ou configuração prévia. Também cobriu destino não informado e uso de Propulsor com configuração pessoal existente. A revisão confirmou que as instruções não herdam acessos de outro integrante.
+
+Não foram processados vídeos reais nem criados documentos fictícios no Drive nesta alteração de documentação. A instalação e o pacote são comparados por conteúdo; os exemplos públicos permanecem fictícios.
+
 ## Versão 1.1.0
 
 Correção de fluxo em 12/11/2026. O entregável passa a ser um Google Docs por reunião na mesma pasta da transcrição do cliente, com data, pessoa, momento no vídeo e frase literal. A rotina não gera imagens, não cria subpastas adicionais e não alimenta automaticamente o documento central antigo.

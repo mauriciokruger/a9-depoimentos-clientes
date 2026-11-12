@@ -2,7 +2,7 @@
 
 ## Da evidência ao material
 
-Este modo só se aplica a um pedido separado de material. O fluxo padrão de reunião cria somente o Docs textual na pasta do cliente, sem gerar imagens.
+Este modo só se aplica a um pedido separado de material. O fluxo padrão de qualquer reunião de cliente da A9 cria somente o Docs textual na pasta autorizada do Drive, sem gerar imagens.
 
 Leia os Docs atuais dos encontros do cliente em cada pedido de material. Selecione somente o necessário para o público e a mensagem. Guarde a referência do registro usado no material de produção. O documento central antigo é histórico, sem alimentação automática.
 
@@ -16,7 +16,7 @@ Antes de preparar um corte, confira a autoria e o intervalo, além de eventuais 
 
 Os modelos aprovados combinam os seguintes elementos.
 
-1. Categoria como resultado de cliente ou evolução do cliente e nome do programa.
+1. Categoria como resultado de cliente ou evolução do cliente e produto, serviço ou programa quando informado.
 2. Um número ou uma frase curta em destaque.
 3. Fala real e contexto suficiente para entender a aplicação.
 4. Nome da pessoa, empresa e data da reunião.

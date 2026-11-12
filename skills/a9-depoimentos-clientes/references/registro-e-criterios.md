@@ -6,7 +6,7 @@ Adapte o formato à estrutura existente do documento. Cada trecho deve permitir 
 
 | Campo | Conteúdo |
 | --- | --- |
-| Empresa e programa | Cliente e Propulsor de IA ou Domínio de IA confirmados |
+| Cliente e serviço | Empresa confirmada. Produto, serviço ou programa somente quando informado, sem restrição a Propulsor ou Domínio |
 | Reunião | Nome, etapa, data real e identificação do encontro |
 | Pessoa | Nome e papel de cliente. Atribuição incerta fica explícita |
 | Fontes | Links de gravação e transcrição. Arquivo local identificado quando ainda não houver link |
@@ -35,7 +35,7 @@ Quando uma nova fonte corrigir materialmente número, unidade ou autoria, atuali
 
 ## Exemplo fictício de registro
 
-Empresa Horizonte · Propulsor de IA
+Empresa Horizonte · Reunião de relacionamento com cliente
 
 Acompanhamento de 12/11/2026 · Ana, responsável pela operação
 

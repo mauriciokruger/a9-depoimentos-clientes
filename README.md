@@ -2,21 +2,23 @@
 
 <h1 align="center">A9 Educação · Depoimentos e evolução de clientes</h1>
 
-<p align="center">Depoimentos com data, minutagem e frase literal.<br>Um Google Docs por reunião, na pasta da transcrição de cada cliente.</p>
+<p align="center">Do vídeo ao registro dos depoimentos do cliente.<br>Um Google Docs por reunião, com frases e minutagens, na pasta autorizada do Drive.</p>
 
 <p align="center">
-  <a href="https://github.com/mauriciokruger/a9-depoimentos-clientes/releases/download/v1.1.0/a9-depoimentos-clientes-v1.1.0.zip">Baixar a skill</a> ·
+  <a href="https://github.com/mauriciokruger/a9-depoimentos-clientes/releases/download/v1.2.0/a9-depoimentos-clientes-v1.2.0.zip">Baixar a skill</a> ·
   <a href="#instalação">Como instalar</a> ·
   <a href="#exemplo-fictício">Ver um exemplo</a>
 </p>
 
-<p align="center"><strong>v1.1.0</strong> · Propulsor de IA · Domínio de IA · Google Drive via MCP</p>
+<p align="center"><strong>v1.2.0</strong> · Para toda a equipe A9 · Vídeo ou transcrição · Google Drive via MCP</p>
 
 ## Sobre a skill
 
-Ao receber uma reunião gravada e o pedido de atualizar o Mapa ou acompanhamento, a IA identifica os depoimentos e cria um Google Docs na mesma pasta da transcrição, dentro do cliente. O documento registra a data, quem falou, o momento no vídeo e a frase literal, com os links das fontes disponíveis.
+Qualquer pessoa da A9 pode enviar o vídeo de uma reunião com um cliente e pedir a identificação dos depoimentos. A IA analisa o material, transcreve as falas selecionadas e salva um Google Docs na pasta autorizada do Drive. Cada trecho traz a data da reunião, quem falou, a frase literal e a minutagem inicial e final no vídeo.
 
-O fluxo padrão entrega somente esse registro textual. Não gera imagens ou cards, não cria pastas de imagens e não alimenta automaticamente o antigo documento central. Pedidos separados de materiais podem consultar os Docs dos encontros.
+A skill atende reuniões de qualquer produto, serviço ou relacionamento com clientes da A9. Não exige Propulsor, Domínio de IA, Mapa de consultoria ou transcrição pronta. Vídeos locais ou anexados também podem ser usados, conforme os recursos de análise disponíveis no ambiente.
+
+O fluxo padrão entrega somente esse registro textual. Não gera imagens ou cards nem cria pastas adicionais. Registros centrais antigos permanecem preservados. Pedidos separados de materiais podem consultar os Docs dos encontros.
 
 A skill diferencia resultado relatado, demonstração observada, mudança de hábito e expectativa. Mantém quem falou, em qual reunião e em qual minuto. A versão pública contém a metodologia. Transcrições, nomes de clientes, links internos e configuração da base ficam no ambiente privado da equipe.
 
@@ -24,7 +26,7 @@ A skill diferencia resultado relatado, demonstração observada, mudança de há
 
 | Momento | Entrega |
 | --- | --- |
-| Chega uma reunião para atualizar o Mapa | Docs de depoimentos na pasta da transcrição do cliente |
+| A pessoa envia vídeo ou transcrição de reunião com cliente | Docs de depoimentos na pasta autorizada do Drive |
 | A reunião já foi analisada | Complemento do mesmo Docs, sem duplicação |
 | Não há trecho aproveitável | Docs com essa conclusão e os limites da análise |
 | O documento é salvo | Conferência do conteúdo e da pasta antes de entregar o link |
@@ -35,16 +37,48 @@ A execução acontece durante o atendimento no chat, com ferramentas disponívei
 
 ## Comece aqui
 
-1. [Baixe o pacote da versão 1.1.0](https://github.com/mauriciokruger/a9-depoimentos-clientes/releases/download/v1.1.0/a9-depoimentos-clientes-v1.1.0.zip).
+1. [Baixe o pacote da versão 1.2.0](https://github.com/mauriciokruger/a9-depoimentos-clientes/releases/download/v1.2.0/a9-depoimentos-clientes-v1.2.0.zip).
 2. Instale a pasta da skill no ambiente que você utiliza.
-3. Conecte Google Drive e Docs por MCP com acesso às pastas dos clientes.
-4. Defina a pasta raiz e a autorização na configuração privada do projeto.
-5. Envie uma reunião, peça a atualização do Mapa e confira o Docs salvo.
+3. Conecte Google Drive e Docs por MCP usando sua conta e os acessos autorizados.
+4. Envie o vídeo ou a transcrição e indique a pasta do Drive onde salvar o documento.
+5. Peça a curadoria e confira o link do Docs salvo. Não é necessário criar arquivo de configuração para esse primeiro uso.
 
 ```text
-Atualize o Mapa desta reunião e use $a9-depoimentos-clientes para criar
-um Google Docs na pasta da transcrição do cliente, com a data da reunião,
-quem falou, o momento no vídeo e a frase literal. Não gere imagens.
+Use $a9-depoimentos-clientes para analisar o vídeo anexado desta reunião
+com o cliente. Identifique os momentos em que ele dá um depoimento.
+Salve um Google Docs na pasta do Drive que estou indicando neste pedido,
+com a data da reunião, quem falou, a frase exata e o minuto inicial
+e final de cada trecho. Não gere imagens.
+```
+
+Inclua o link da pasta autorizada junto do pedido. A IA não precisa receber uma chave de API no texto. O conector disponível deve estar autenticado e permitir criar o documento no destino.
+
+## O que o documento entrega
+
+| Informação | Como aparece |
+| --- | --- |
+| Cliente e encontro | Nome confirmado e data da reunião |
+| Pessoa | Quem deu o depoimento, com incerteza sinalizada quando necessário |
+| Momento do vídeo | Tempo decorrido de início e fim, como 00:12:04 a 00:12:35 |
+| Frase | Transcrição literal da fala selecionada |
+| Contexto e fontes | Ressalvas, identificação do vídeo e links efetivamente disponíveis |
+
+O serviço ou programa pode ser registrado quando informado. Não é obrigatório. Se o vídeo não puder ser acessado ou a fala não estiver clara, a limitação fica explícita. A skill não inventa depoimentos, autoria ou minutagem.
+
+## Destino no Drive
+
+A pasta informada e autorizada no pedido é o destino. Se uma transcrição já estiver no Drive e o projeto usar essa organização, o Docs pode ficar na mesma pasta da transcrição do cliente. Quando nenhuma pasta for informada, a IA consulta o contexto ou a configuração individual disponível. Se ainda faltar o destino, pede esse dado antes de salvar.
+
+Cada pessoa usa sua própria conta e seus acessos. A instalação não libera as pastas particulares de outro integrante nem presume que toda a equipe usa a estrutura de um consultor.
+
+## Uso no Propulsor e Domínio de IA
+
+Propulsor e Domínio são aplicações específicas da skill. Um consultor pode configurar seu projeto para criar o Docs de depoimentos ao pedir a atualização do Mapa após uma reunião gravada. Essa rotina continua disponível sem limitar o uso geral da equipe.
+
+```text
+Atualize o Mapa desta reunião e use $a9-depoimentos-clientes para salvar
+os depoimentos em um Google Docs na pasta da transcrição do cliente.
+Registre data, pessoa, frase literal e momento do vídeo. Não gere imagens.
 ```
 
 ## Instalação
@@ -62,11 +96,11 @@ Outras plataformas podem aceitar upload de um ZIP de skill ou arquivos de instru
 
 A skill de marca [A9 Educação](https://github.com/mauriciokruger/a9-educacao) complementa pedidos separados de peças. O registro textual da reunião não depende de assets de marca.
 
-## Configuração privada
+## Configuração privada opcional
 
-Crie `00_base/depoimentos_clientes.md` no projeto com a pasta raiz dos clientes, o escopo autorizado e as convenções do acompanhamento. O destino final é confirmado pelos metadados da transcrição de cada reunião. O pacote encontra essa configuração primeiro.
+Para uso recorrente, você pode criar `00_base/depoimentos_clientes.md` no seu projeto com as pastas autorizadas e as convenções da equipe. A pasta explícita do pedido tem prioridade. A configuração ajuda a resolver o destino quando ele não for informado.
 
-Para uso fora do projeto, crie `~/.agents/skill-config/a9-depoimentos-clientes.json` com o formato abaixo. Substitua o endereço demonstrativo pela pasta autorizada.
+Outra opção é criar `~/.agents/skill-config/a9-depoimentos-clientes.json` no ambiente pessoal de quem usa a skill. Substitua o endereço demonstrativo pela pasta autorizada. Não é necessário restringir produtos ou programas.
 
 ```json
 {
@@ -74,7 +108,6 @@ Para uso fora do projeto, crie `~/.agents/skill-config/a9-depoimentos-clientes.j
   "document_scope": "one_document_per_meeting",
   "destination": "same_folder_as_transcript",
   "generate_images": false,
-  "programs": ["Propulsor de IA", "Domínio de IA"],
   "maintenance_authorized": true,
   "authorization_note": "Informe quem autorizou, quando e em qual escopo"
 }
@@ -87,13 +120,12 @@ O campo de autorização documenta uma permissão real do responsável. Ele não
 Acrescente às instruções do projeto, como `AGENTS.md`, uma regra equivalente ao texto abaixo.
 
 ```text
-Ao receber uma nova reunião gravada de cliente do Propulsor ou Domínio
-e o pedido de atualizar o Mapa ou acompanhamento, execute a skill
-a9-depoimentos-clientes durante o mesmo atendimento. Crie um Docs
-de depoimentos na pasta da transcrição do cliente, com data, autoria,
-momento do vídeo e frase literal. Reenvios complementam o mesmo Docs.
-Não gere imagens nem crie pastas adicionais. Preserve o acompanhamento
-e confira o conteúdo e a pasta antes de informar que foi salvo.
+Quando eu trouxer uma reunião gravada de cliente e pedir os depoimentos,
+use a9-depoimentos-clientes durante o mesmo atendimento. Crie um Docs
+na pasta autorizada do Drive com data, pessoa, frase literal e momento
+do vídeo. Reenvios complementam o mesmo documento. Não gere imagens
+nem crie pastas adicionais. Confira conteúdo e pasta antes de entregar
+o link. Preserve as convenções do acompanhamento deste projeto.
 ```
 
 Uma seção da barra lateral organiza os chats. A regra deve estar nas instruções do diretório em que eles trabalham, para ser encontrada durante as tarefas.
@@ -102,7 +134,7 @@ Uma seção da barra lateral organiza os chats. A regra deve estar nas instruç�
 
 > Agora faço o relatório em 20 minutos, antes levava duas horas.
 
-Ana · Empresa Horizonte · Propulsor de IA · acompanhamento de 12/11/2026 · 00:05:10 a 00:05:48.
+Ana · Empresa Horizonte · reunião com cliente de 12/11/2026 · 00:05:10 a 00:05:48.
 
 Esse trecho seria um resultado relatado pela cliente, com fonte e limites registrados. A intenção de automatizar outra área no mês seguinte ficaria separada como expectativa. Um número calculado pela IA não seria colocado entre aspas como se fosse fala da cliente.
 

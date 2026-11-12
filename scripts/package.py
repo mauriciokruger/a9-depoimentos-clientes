@@ -8,7 +8,7 @@ root = Path(__file__).resolve().parents[1]
 skill = root / "skills" / "a9-depoimentos-clientes"
 output = root / "dist"
 output.mkdir(exist_ok=True)
-archive = output / "a9-depoimentos-clientes-v1.1.0.zip"
+archive = output / "a9-depoimentos-clientes-v1.2.0.zip"
 with ZipFile(archive, "w", ZIP_DEFLATED) as bundle:
     for source in sorted(skill.rglob("*")):
         if source.is_file():
