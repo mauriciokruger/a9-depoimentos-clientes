@@ -1,4 +1,16 @@
-# Validação da versão 1.0.0
+# Validação
+
+## Versão 1.1.0
+
+Correção de fluxo em 12/11/2026. O entregável passa a ser um Google Docs por reunião na mesma pasta da transcrição do cliente, com data, pessoa, momento no vídeo e frase literal. A rotina não gera imagens, não cria subpastas adicionais e não alimenta automaticamente o documento central antigo.
+
+O teste de referência da versão 1.0.0 reproduziu a divergência. Ao receber apenas o pedido de atualizar o Mapa com uma reunião gravada, a instrução anterior levava ao documento central e não exigia um Docs na pasta do cliente. A versão 1.1.0 corrige explicitamente o artefato e o destino.
+
+Os cenários de conferência cobrem reunião nova, reenvio, encontros diferentes no mesmo dia, resumo sem fala literal e criação com resposta incerta. Conteúdo e pasta de destino devem ser conferidos antes de confirmar o salvamento.
+
+As pastas raízes dos clientes foram localizadas por MCP e registradas somente na configuração privada. Na execução de cada reunião, o parent efetivo da transcrição ainda precisa ser confirmado. Nesta alteração não foi fornecida reunião nova para curadoria e não foram criados Docs fictícios na área real dos clientes.
+
+## Histórico da versão 1.0.0
 
 Data de referência em 12/11/2026.
 

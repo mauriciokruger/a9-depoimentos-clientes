@@ -1,7 +1,7 @@
 interface:
   display_name: "A9 · Depoimentos de clientes"
-  short_description: "Evidências das reuniões do Propulsor e Domínio"
+  short_description: "Depoimentos em Docs na pasta de cada cliente"
   brand_color: "#6DFF30"
-  default_prompt: "Use $a9-depoimentos-clientes para analisar esta reunião e atualizar a base autorizada no Drive com falas e demonstrações rastreáveis."
+  default_prompt: "Use $a9-depoimentos-clientes ao atualizar o Mapa desta reunião e salve um Google Docs de depoimentos na pasta da transcrição do cliente, sem gerar imagens."
 policy:
   allow_implicit_invocation: true

@@ -2,7 +2,9 @@
 
 ## Da evidência ao material
 
-Leia a versão atual da base no Drive em cada pedido de material. Selecione somente o necessário para o público e a mensagem, sem copiar a base inteira. Guarde a referência do registro usado no material de produção.
+Este modo só se aplica a um pedido separado de material. O fluxo padrão de reunião cria somente o Docs textual na pasta do cliente, sem gerar imagens.
+
+Leia os Docs atuais dos encontros do cliente em cada pedido de material. Selecione somente o necessário para o público e a mensagem. Guarde a referência do registro usado no material de produção. O documento central antigo é histórico, sem alimentação automática.
 
 No registro, preserve a fala literal. No texto final, uma edição pode retirar repetições ou vícios de fala sem alterar o significado. Não junte frases distantes como se fossem uma fala contínua. Não coloque uma paráfrase ou cálculo novo entre aspas.
 

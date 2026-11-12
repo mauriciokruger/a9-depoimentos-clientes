@@ -49,10 +49,10 @@ Draw-Text 'Reunião' 28 '#FFFFFF' 1180 290 $true
 Draw-Text '02' 19 '#29FFE8' 1180 365 $true
 Draw-Text 'Evidência' 28 '#FFFFFF' 1180 392 $true
 Draw-Text '03' 19 '#29FFE8' 1180 467 $true
-Draw-Text 'Base viva' 28 '#FFFFFF' 1180 494 $true
+Draw-Text 'Google Docs' 28 '#FFFFFF' 1180 494 $true
 
 Draw-Text 'Do conhecimento ao resultado.' 23 '#FFFFFF' 80 612
-Draw-Text 'SKILL A9 · v1.0.0' 18 '#AAB4CB' 1180 618
+Draw-Text 'SKILL A9 · v1.1.0' 18 '#AAB4CB' 1180 618
 $bar = [Drawing.Drawing2D.LinearGradientBrush]::new([Drawing.Rectangle]::new(80, 676, 1440, 5), [Drawing.ColorTranslator]::FromHtml('#6DFF30'), [Drawing.ColorTranslator]::FromHtml('#29FFE8'), 0.0)
 $graphics.FillRectangle($bar, 80, 676, 1440, 5)
 $bitmap.Save((Join-Path $assetDir 'capa.png'), [Drawing.Imaging.ImageFormat]::Png)
