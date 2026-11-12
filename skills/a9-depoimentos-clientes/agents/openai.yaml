@@ -1,0 +1,7 @@
+interface:
+  display_name: "A9 · Depoimentos de clientes"
+  short_description: "Evidências das reuniões do Propulsor e Domínio"
+  brand_color: "#6DFF30"
+  default_prompt: "Use $a9-depoimentos-clientes para analisar esta reunião e atualizar a base autorizada no Drive com falas e demonstrações rastreáveis."
+policy:
+  allow_implicit_invocation: true

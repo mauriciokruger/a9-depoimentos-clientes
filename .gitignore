@@ -1,0 +1,14 @@
+.local/
+dist/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+config.local.*
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.wav
+*.m4a
